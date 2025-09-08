@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efim Krakhalev - Resume</title>
+    <style>
+      @media print {
+        body {
+          margin: 0;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.4;
+        color: #333;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in;
+        font-size: 11pt;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #2c5aa0;
+        padding-bottom: 15px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 24pt;
+        color: #2c5aa0;
+        font-weight: bold;
+      }
+
+      .header .subtitle {
+        font-size: 12pt;
+        color: #444;
+        margin: 5px 0;
+        font-weight: 500;
+      }
+
+      .header .contact {
+        font-size: 10pt;
+        color: #444;
+        margin-top: 8px;
+        a {
+          color: #2c5aa0;
+        }
+      }
+
+      .section {
+        margin-bottom: 18px;
+      }
+
+      .section h2 {
+        font-size: 14pt;
+        color: #2c5aa0;
+        border-bottom: 1px solid #2c5aa0;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .summary {
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .skill-category {
+        margin-bottom: 8px;
+      }
+
+      .skill-category strong {
+        color: #2c5aa0;
+        font-size: 10pt;
+      }
+
+      .skill-category div {
+        font-size: 9.5pt;
+        margin-top: 2px;
+        line-height: 1.3;
+      }
+
+      .job {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        color: #2c5aa0;
+        font-size: 11pt;
+      }
+
+      .company {
+        font-weight: bold;
+        font-size: 11pt;
+      }
+
+      .dates {
+        font-size: 10pt;
+        color: #444;
+        font-style: italic;
+      }
+
+      .job-description ul {
+        margin: 8px 0;
+        padding-left: 15px;
+      }
+
+      .job-description li {
+        margin-bottom: 4px;
+        font-size: 10pt;
+        line-height: 1.4;
+      }
+
+      .achievements {
+        background-color: #f8f9fa;
+        padding: 12px;
+        border-left: 3px solid #2c5aa0;
+        margin-top: 15px;
+      }
+
+      .achievements ul {
+        margin: 0;
+        padding-left: 15px;
+      }
+
+      .achievements li {
+        font-size: 10pt;
+        margin-bottom: 3px;
+      }
+
+      .education {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .print-instruction {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 12pt;
+        color: #1565c0;
+      }
+
+      @media print {
+        .print-instruction {
+          display: none;
+        }
+        body {
+          font-size: 10pt;
+        }
+        .header h1 {
+          font-size: 20pt;
+        }
+        .section h2 {
+          font-size: 12pt;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="print-instruction no-print">
+      <strong>To save as PDF:</strong> Press Ctrl+P (Cmd+P on Mac), then select
+      "Save as PDF" as your destination
+    </div>
+
+    <div class="header">
+      <h1>Efim Krakhalev</h1>
+      <div class="subtitle">
+        Site Reliability Engineer & Full-Stack Developer
+      </div>
+      <div class="contact">
+        <a href="tel:+16477810770">(+1) 647-781-0770</a>
+        |
+        <a href="mailto:krakhalev.efim@gmail.com">krakhalev.efim@gmail.com</a>
+        |
+        <a href="https://ekhyper.link">https://ekhyper.link</a>
+        |
+        <a href="https://www.linkedin.com/in/ek92/">LinkedIn: EK-92</a>
+        |
+        <a href="https://github.com/EK-92">GitHub: ek92</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <div class="summary">
+        Experienced Site Reliability Engineer and Full-Stack Developer with 6+
+        years in cloud infrastructure, automation, and modern web development.
+        Proven track record of improving system reliability, optimizing
+        performance, and leading technical initiatives across high-availability
+        environments. Expert in AWS/GCP, containerization, and incident response
+        with strong leadership and mentoring capabilities.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Infrastructure & DevOps</strong>
+          <div>
+            AWS, GCP, Terraform, Ansible, Packer, Docker, Podman, Kubernetes
+            (k8s), OpenVPN, Vault
+          </div>
+        </div>
+        <div class="skill-category">
+          <strong>Operating Systems</strong>
+          <div>
+            Alpine Linux, Amazon Linux, CentOS, Debian, Fedora, openSUSE, Rocky
+            Linux, Ubuntu Server
+          </div>
+        </div>
+        <div class="skill-category">
+          <strong>Programming & Frameworks</strong>
+          <div>
+            JavaScript, Ruby, Python | React, Angular, Vue, Ember, Django,
+            Ruby-on-Rails
+          </div>
+        </div>
+        <div class="skill-category">
+          <strong>Tools & Technologies</strong>
+          <div>
+            systemd, bash, zsh, PostgreSQL, Datadog, Git, SSH, GPG, Monit, SOC2
+            Compliance
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <strong>Methodologies</strong>
+        <div>
+          Scrum, Kanban, Incident Response, Code Review, Performance
+          Optimization
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="company">RewardOps</div>
+            <div class="job-title">Site Reliability Engineer</div>
+          </div>
+          <div class="dates">Toronto, ON | Oct 2021 - Jun 2025</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>
+              <strong>Infrastructure Management:</strong> Architected and
+              managed cloud infrastructure using Terraform, Ansible, and Packer,
+              ensuring 99.9% uptime for production systems
+            </li>
+            <li>
+              <strong>Incident Response:</strong> Served as key member of 24x7
+              incident response team, reducing mean time to resolution (MTTR) by
+              implementing automated monitoring and alerting systems
+            </li>
+            <li>
+              <strong>Security & Compliance:</strong> Led SOC2 compliance
+              initiatives, implementing security policies and controls that
+              enabled successful audit completion
+            </li>
+            <li>
+              <strong>Performance Optimization:</strong> Identified and resolved
+              critical performance bottlenecks using Datadog monitoring,
+              improving application response times by 40%
+            </li>
+            <li>
+              <strong>Vulnerability Management:</strong> Proactively resolved
+              50+ CVEs across multiple codebases, maintaining security posture
+              through dependency management and code updates
+            </li>
+            <li>
+              <strong>Container Optimization:</strong> Redesigned Docker images
+              for Rails/Ember monorepo using Alpine Linux, reducing build times
+              by 60% and improving developer productivity
+            </li>
+            <li>
+              <strong>Network Infrastructure:</strong> Implemented and managed
+              organization-wide OpenVPN server, enabling secure remote access
+              for 100+ employees
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="company">RewardOps</div>
+            <div class="job-title">Front-End Developer</div>
+          </div>
+          <div class="dates">Toronto, ON | Nov 2018 - Sep 2021</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>
+              <strong>Client Delivery:</strong> Developed high-performance web
+              applications using React/Redux, Angular, and Ember for major
+              clients including Air Canada's Aeroplan program
+            </li>
+            <li>
+              <strong>Code Quality:</strong> Maintained 85%+ test coverage
+              across projects through comprehensive testing strategies and
+              regular code reviews
+            </li>
+            <li>
+              <strong>Team Leadership:</strong> Led technical interviews,
+              onboarding processes, and mentored 5+ co-op students, improving
+              team knowledge transfer and collaboration
+            </li>
+            <li>
+              <strong>Feature Development:</strong> Delivered complex full-stack
+              features for Ruby-on-Rails/Ember applications, contributing to 20%
+              increase in user engagement
+            </li>
+            <li>
+              <strong>UI/UX Collaboration:</strong> Partnered with design team
+              to implement pixel-perfect, responsive interfaces that improved
+              user satisfaction scores
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="company">Emeritus Financial Strategies</div>
+            <div class="job-title">Front-End Developer</div>
+          </div>
+          <div class="dates">Burlington, ON | Apr 2017 - Apr 2018</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>
+              <strong>Legacy Modernization:</strong> Completely rewrote legacy
+              financial application using React/Redux, improving performance by
+              50% and enhancing security protocols
+            </li>
+            <li>
+              <strong>Data Visualization:</strong> Implemented interactive
+              reporting features using Chartist and Recharts libraries, enabling
+              clients to visualize complex financial data
+            </li>
+            <li>
+              <strong>Security Enhancement:</strong> Upgraded jQuery-based
+              legacy system with modern security practices to protect sensitive
+              client financial information
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="company">The SilverLogic</div>
+            <div class="job-title">Front-End Intern (Remote)</div>
+          </div>
+          <div class="dates">Boca Raton, FL | May 2016 - Mar 2017</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>
+              <strong>Client Solutions:</strong> Delivered pixel-perfect
+              responsive websites for 10+ clients using React and Angular
+              frameworks
+            </li>
+            <li>
+              <strong>Full-Stack Development:</strong> Implemented end-to-end
+              features for Django/React applications, gaining experience in
+              complete software development lifecycle
+            </li>
+            <li>
+              <strong>Technology Integration:</strong> Worked with modern
+              development ecosystem including Sass, Moment.js, Lodash, and Axios
+              for enhanced functionality
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="education">
+        <div>
+          <strong>Software Engineering Diploma</strong><br />
+          Sheridan College | Oakville, ON
+        </div>
+        <div class="dates">2014 - 2017</div>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <h2 style="margin-top: 0; border: none; color: #2c5aa0">
+        Key Achievements
+      </h2>
+      <ul>
+        <li>
+          <strong>System Reliability:</strong> Maintained 99.9% uptime across
+          critical production systems serving millions of users
+        </li>
+        <li>
+          <strong>Performance Optimization:</strong> Reduced Docker build times
+          by 60% and application response times by 40%
+        </li>
+        <li>
+          <strong>Team Development:</strong> Successfully mentored 5+ junior
+          developers and co-op students
+        </li>
+        <li>
+          <strong>Security Leadership:</strong> Led SOC2 compliance initiative,
+          ensuring regulatory adherence
+        </li>
+        <li>
+          <strong>Incident Management:</strong> Key contributor to 24x7 incident
+          response with proven track record of rapid resolution
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
